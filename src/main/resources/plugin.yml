@@ -1,0 +1,12 @@
+name: zChatBubble
+version: '${project.version}'
+main: milkyland.zchatbubble.Plugin
+api-version: '1.16'
+
+softdepend:
+  - ChatEx
+
+depend:
+  - DecentHolograms
+
+permissions:

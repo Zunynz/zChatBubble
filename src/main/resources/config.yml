@@ -1,0 +1,11 @@
+settings:
+  base_line_height: 2.7 # Base height from player's head for first line (only float numbers - 0.1, 0.2...)
+  added_height: 0.35 # Additional height for each line (only float numbers - 0.1, 0.2...)
+  block_global_messages: false # true/false. Block the show of the message if players using global chat (!Test message)
+  max_letters_per_line: 25 # how many letters it will be shown on each line
+  letters_in_message_limit: 100 # limit of how many letters it is allowed to write in one sentence. Works as anti-spam. Write 0 to disable.
+  symbol_at_the_beginning: '&8&l➦ &f' # Your message will look like that: ➦ Test message.
+
+# If you have any of these chat plugins you can enable it in settings to don't show blocked by plugin messages in bubble.
+additional_plugins:
+  chat_ex: false # true/false

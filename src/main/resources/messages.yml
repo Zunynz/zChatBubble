@@ -1,0 +1,2 @@
+messages:
+  letters_in_message_limit: 'You have reached the character limit for a message. The maximum allowed message length is %limitNumber% characters.'
