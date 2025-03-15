@@ -27,6 +27,15 @@ public class ConfigManager {
         }
     }
 
+    public void reload() {
+        for (String fileName : configs.keySet()) {
+            File file = new File(Plugin.getInstance().getDataFolder().getAbsolutePath() + "/" + fileName);
+            if (file.exists()) {
+                configs.put(fileName, YamlConfiguration.loadConfiguration(file));
+            }
+        }
+    }
+
     public YamlConfiguration get(String configName) {
         return configs.get(configName + ".yml");
     }

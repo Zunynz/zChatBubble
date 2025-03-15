@@ -5,6 +5,7 @@ settings:
   max_letters_per_line: 25 # how many letters it will be shown on each line
   letters_in_message_limit: 100 # limit of how many letters it is allowed to write in one sentence. Works as anti-spam. Write 0 to disable.
   symbol_at_the_beginning: '&8&l➦ &f' # Your message will look like that: ➦ Test message.
+  hologram_show_time: 8 # How many seconds will be hologram shown above players head (only integers number - 1, 2, 3, 4...)
 
 # If you have any of these chat plugins you can enable it in settings to don't show blocked by plugin messages in bubble.
 additional_plugins:

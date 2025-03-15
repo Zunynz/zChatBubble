@@ -1,6 +1,7 @@
 package milkyland.zchatbubble;
 
 import lombok.Getter;
+import milkyland.commands.MainCMD;
 import milkyland.listeners.ChatExListener;
 import milkyland.listeners.PlayerChatListener;
 import milkyland.utils.ConfigManager;
@@ -34,6 +35,8 @@ public final class Plugin extends JavaPlugin {
         }
 
         pm.registerEvents(new PlayerChatListener(chatExEnabled), this);
+        getCommand("zch").setExecutor(new MainCMD());
+        getCommand("zch").setTabCompleter(new MainCMD());
     }
 
     @Override

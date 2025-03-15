@@ -90,7 +90,7 @@ public class PlayerChatListener implements Listener {
                 DHAPI.removeHologram(hologram.getId());
                 playerHolograms.remove(player);
             }
-        }.runTaskLater(Plugin.getInstance(), 150L);
+        }.runTaskLater(Plugin.getInstance(), config.getInt("settings.hologram_show_time") * 20L);
 
         new BukkitRunnable() {
             @Override

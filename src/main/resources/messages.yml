@@ -1,2 +1,6 @@
 messages:
   letters_in_message_limit: 'You have reached the character limit for a message. The maximum allowed message length is %limitNumber% characters.'
+  reloaded: '&6[⚡] &fYou have &6reloaded &fthe config.'  # if you used /zch reload
+
+error:
+  not_enough_perms: 'You don''t have enough perms to use this command' # player needs permission 'zChatBubble.use'
